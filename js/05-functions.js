@@ -33,3 +33,11 @@ array1 = ['apple', 'mango', 'grapes', 'banana'];
 array1.forEach((element, index) => {
   console.log(`The element ${element} is at number ${index}`);
 });
+
+let sum = 0;
+let numbers = [65, 44, 12, 4];
+numbers.forEach((item) => {
+  sum = sum + item;
+  return sum;
+});
+console.log(sum);
