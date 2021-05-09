@@ -50,3 +50,7 @@ let firstName = 'Rohit',
 let greeting = `Welcome ${firstName} ${lastName}`;
 console.log(greeting);
 */
+
+// let num = 15;
+// let numString = num + ''; //converting numbr to string
+// console.log(numString);

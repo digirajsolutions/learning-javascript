@@ -1,3 +1,6 @@
+//getting total time taken to execute the file
+const startTime = performance.now();
+
 //map() -> creates a new array with the results of calling
 //a provided function on every element in this array.
 const array = [1, 2, 3, 4, 5];
@@ -100,3 +103,41 @@ let fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
 let spliced = fruits.splice(2, 1, 'Lemon', 'Kiwi');
 console.log(spliced); //["Apple"]
 console.log(fruits); //["Banana", "Orange", "Lemon", "Kiwi", "Mango"]
+
+//removing duplicates from an array using Set() function
+const array3 = [
+  11,
+  12,
+  12,
+  15,
+  23,
+  15,
+  22,
+  22,
+  true,
+  true,
+  false,
+  false,
+  'Rohit',
+  'Rohit',
+];
+
+const freshArray = [...new Set(array3)];
+console.log(freshArray);
+//[11, 12, 15, 23, 22, true, false, "Rohit"]
+
+const endTime = performance.now();
+console.log(
+  `The total time taken for file to execute: ${
+    endTime.toFixed(2) - startTime.toFixed(2)
+  } milliSeconds.`
+);
+
+//using length property to resize and empty an array
+console.log(array3.length); //14
+array3.length = 7;
+console.log(array3.length); //7
+console.log(array3); //[11, 12, 12, 15, 23, 15, 22]
+array3.length = 0;
+console.log(array3.length); //0
+console.log(array3); //[}
